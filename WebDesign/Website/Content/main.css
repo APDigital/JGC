@@ -1,0 +1,94 @@
+﻿/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+body {
+    background-image: url(/img/retro-games.jpg);
+    background-repeat: repeat-y;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size: 100%;
+    height: 100%;
+}
+
+.hero {
+    padding: 100px 0;
+    color: white;
+}
+
+    .hero img {
+        padding: 20px 0;
+        border-radius: 20%;
+        width: 400px;
+    }
+
+.about {
+    background-color: #F4F4F4;
+    padding: 20px 0
+}
+
+.white-box {
+    background-color: #F4F4F4;
+    margin: 30px;
+    padding: 20px 20px;
+    border-radius: 1%;
+}
+.sticker img{
+    width:200px;
+    padding-right:40px;
+}
+.contact {
+    background-color: #454141;
+    color: white;
+    padding: 20px;
+    clear: both;
+}
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    border-radius:8px;
+}
+.submit {
+    margin: 8px auto;
+    
+}
+footer {
+    background-color: #222222;
+    color: white;
+    padding: 10px;
+}
+footer p{
+    position:absolute;
+    margin-top: 25px;
+    margin-left:10px;
+}
+footer .col{
+    width:100%;
+}
