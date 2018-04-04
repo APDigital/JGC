@@ -50,7 +50,8 @@ body {
 
 .about {
     background-color: #F4F4F4;
-    padding: 20px 0
+    padding: 20px 0;
+    overflow-y: scroll
 }
 
 .white-box {

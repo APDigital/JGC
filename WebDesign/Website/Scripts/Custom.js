@@ -10,19 +10,24 @@
     });
 };
 
-smoothScrollingTo('#homePage');
-smoothScrollingTo('#aboutPage');
-smoothScrollingTo('#venuePage');
-smoothScrollingTo('#contactPage');
 
-function smoothScrollingTo(target) {
-    $('html,body').animate({ scrollTop: $(target).offset().‌​top }, 500);
-}
-
-$('a[href*=\\#]').on('click', function (event) {
-    event.preventDefault();
-    smoothScrollingTo(this.hash);
-});
 $(document).ready(function () {
-    smoothScrollingTo(location.hash);
-});
+    $("a").on('click', function (event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            if (hash == "#home") {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+            $('html, body').animate({
+                scrollTop: ($(hash).offset().top -80)
+            }, 800, function () {
+                window.location.hash = hash;
+            });
+        }
+    })
+})
