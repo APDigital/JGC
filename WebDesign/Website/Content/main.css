@@ -38,7 +38,7 @@ body {
 }
 
 .hero {
-    padding: 100px 0;
+    padding: 160px 0;
     color: white;
 }
 
@@ -51,18 +51,32 @@ body {
 .about {
     background-color: #F4F4F4;
     padding: 20px 0;
-    overflow-y: scroll
 }
-
+#about{
+    padding:100px 0 0 0;
+}
+#venue{
+    padding:80px 0;
+}
 .white-box {
     background-color: #F4F4F4;
     margin: 30px;
-    padding: 20px 20px;
+    padding: 0 20px;
     border-radius: 1%;
+
+}
+.top{
+    padding-left: 60px;
 }
 .sticker img{
-    width:200px;
-    padding-right:40px;
+    width:180px;
+  
+}
+.para{
+    margin-top:30px;
+}
+.para img {
+    width:100px;
 }
 .contact {
     background-color: #454141;
