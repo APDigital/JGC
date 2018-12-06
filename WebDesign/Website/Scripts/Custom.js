@@ -1,7 +1,7 @@
 ﻿function initMap() {
-    var uluru = { address: 'Gale St, Dagenham RM9 4UN', };
+    var uluru = { lat: 51.533315, lng: 0.126512 };
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
+        zoom: 16,
         center: uluru
     });
     var marker = new google.maps.Marker({
@@ -28,5 +28,8 @@ $(document).ready(function () {
                 window.location.hash = hash;
             });
         }
-    })
-})
+    });
+
+});
+
+
