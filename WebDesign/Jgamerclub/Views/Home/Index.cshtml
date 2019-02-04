@@ -1,0 +1,22 @@
+﻿@using Jgamerclub.Models;
+@model EmailBuilder
+
+
+<div class="contact row mx-auto" id="contact">
+    <div class="col-md-12">
+        <h4 class="text-center">Contact</h4>
+        <br />
+    </div>
+    <div class="col-md-12">
+        @using (Html.BeginForm("SendEmail","Home"))
+        {
+            <p>Email Us Here:</p>
+            @Html.TextBoxFor(model => model.UsersName, new { placeholder = "Your Name", @class = "input email" });
+            @Html.TextBoxFor(model => model.Subject, new { placeholder = "Subject", @class = "input email" });
+            @Html.TextBoxFor(model => model.UsersEmail, new { placeholder = "Your Email Address", @class = "input email" });
+            <p>Message</p>
+            @Html.TextBoxFor(model => model.MessageBody, new { placeholder = "Tell us what's on your mind ...", @class = "input email message" });
+            <input type="submit" value="Submit" class="btn btn-light submit" />
+        }
+    </div>
+</div>

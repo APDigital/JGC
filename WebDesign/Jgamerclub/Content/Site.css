@@ -217,7 +217,7 @@ body {
     padding: 5px;
 }
 .email{
-    width: 100%;
+    width:100%;
 }
 
 .message {
@@ -227,6 +227,11 @@ body {
 .submit {
     margin: 8px auto;
 }
+    .submit:hover {
+        background-color: #222222;
+        color: white;
+        border: #222222 1px solid;
+    }
 
 footer {
     background-color: #222222;
