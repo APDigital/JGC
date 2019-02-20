@@ -14,8 +14,6 @@ namespace Jgamerclub.Models
         }
         public void SendEmail()
         {
-
-
             try
             {
                 SmtpClient smtpClient = new SmtpClient("smtp.gmail.com");
@@ -33,13 +31,11 @@ namespace Jgamerclub.Models
             {
                 throw;
             }
-
         }
         public string GetMessageBody()
         {
             string body = string.Format("{0} {1}{1}From {2} {1}{3}", MessageBody, Environment.NewLine, UsersName, UsersEmail);
             return body;
-
         }
     }
 }
