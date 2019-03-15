@@ -66,7 +66,7 @@ body {
     transition: all 0.2s ease-out;
 }
 
-@media only screen and (max-width: 860px) {
+/*@media only screen and (max-width: 860px) {
     .car-01 {
         padding-top: 80px;
     }
@@ -134,7 +134,7 @@ body {
     .car-03 {
         padding-top: 420px;
     }
-}
+}*/
 
 
 .carousel-caption h3 {
@@ -143,6 +143,11 @@ body {
 
 .carousel-item {
     height: 750px;
+}
+.carousel-item img{
+    height: 750px;
+    width:auto;
+    background-size:cover;
 }
 
 .about {
