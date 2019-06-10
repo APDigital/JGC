@@ -6065,6 +6065,7 @@ button.close {
 
 .carousel {
     position: relative;
+    width:100%;
 }
 
 .carousel-inner {
